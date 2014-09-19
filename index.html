@@ -9,7 +9,8 @@
   <meta name="author" content="Dan Jesus">
 
   
-  <meta name="description" content="O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute &hellip;">
+  <meta name="description" content="Faz tempo que não posto nada por aqui, mas agora estou voltando e pra começar vou atualizar os últimos acontecimentos na minha carreira.
+Como já &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -53,12 +54,13 @@
         </span>
        
            <span class="blue_dark">
-             learning everywhere.
+             Uma linha por vez.
            </span>
        
     </a></li>
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About me</a></li>
 </ul>
 
 </nav>
@@ -66,101 +68,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/">Instalando Google Cloud SDK No MacOS Yosemite + ZSH</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-09-19T01:43:29-03:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute Enginem, Cloud Storage, BigQuery, Cloud SQL  e Cloud DNS.</p>
-
-<p>Para instalar o google cloud SDK no yosemite devemos baixar a ferramenta via curl:</p>
-
-<pre><code>curl https://sdk.cloud.google.com | bash
-</code></pre>
-
-<h3>Importante</h3>
-
-<p>Caso seja apresentado algum erro durante a instalação provavelmente é problema um na versão de python que você tem instalada no seu ambiente, recomendo atualizar o python usando brew:</p>
-
-<pre><code>brew install python
-</code></pre>
-
-<p>Recomendo também atualizar o pip depois de atualizar o python, aliás a própria saída do comando de instalação do python vai te propor isso.
-    pip —upgrade pip
-    pip install &ndash;upgrade setuptools</p>
-
-<p>Feito este passo basta repetir o utilitário de instalação do google cloud SDK (gcloud) novamente.</p>
-
-<p>Durante a instalação do gcloud ele irá perguntar quais SDKs você quer instalar, como vou usar php e go eu selecionei primeiro o de php,
-depois será possível instalar mais componentes.</p>
-
-<p>Além disso no final da instalação ele irá pedir qual o path do seu arquivo profile, como estou usando zsh mudei para o caminho do meu arquivo .zshrc:
-Você deve mudar esta configuração para o path do seu ZSH.
-    ~/.zshrc</p>
-
-<p>Fazer reload no seu terminal:
-    source ~/.zshrc</p>
-
-<p>Ao fazer reload no termina você provalmente verá um erro como o abaixo:</p>
-
-<pre><code>/Users/danjesus/google-cloud-sdk/completion.bash.inc:19: parse error near `]]’
-</code></pre>
-
-<p>Isso acontece porque no seu arquivo .zshrc foram inseridas duas linhas como essas:</p>
-
-<pre><code># The next line updates PATH for the Google Cloud SDK.
-source '/Users/danjesus/google-cloud-sdk/path.bash.inc'
-
-#The next line enables bash completion for gcloud.
-source '/Users/danjesus/google-cloud-sdk/completion.bash.inc’
-</code></pre>
-
-<p>Repare que não está sendo usado o path para o ZSH e sim para o bash, devemos alterar estas linhas para o ZSH.</p>
-
-<pre><code>#The next line updates PATH for the Google Cloud SDK.
-source '/Users/danjesus/google-cloud-sdk/path.zsh.inc'
-# The next line enables bash completion for gcloud.
-source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
-</code></pre>
-
-<p>Feito isso atualizar o terminal</p>
-
-<pre><code>source ~/.zshrc
-</code></pre>
-
-<p>Agora ao digitar gcloud e pressionar um tab você verá os comandos disponíveis como na imagem abaixo:</p>
-
-<p><img src="images/Screenshot 2014-09-19 01.41.07.png" alt=""></p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -573,10 +480,6 @@ $ git push deploy master
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/">Instalando Google Cloud SDK no MacOS Yosemite + ZSH</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/video-tdc-2013-trilha-frontend/">Vídeo TDC 2013 - Trilha Frontend</a>
       </li>
     
@@ -590,6 +493,10 @@ $ git push deploy master
     
       <li class="post">
         <a href="/blog/meu-primeiro-talk-sampajs/">Meu primeiro Talk - SampaJS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/deploy-facil-com-git/">Deploy fácil com git</a>
       </li>
     
   </ul>

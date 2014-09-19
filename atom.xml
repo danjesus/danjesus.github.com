@@ -4,7 +4,7 @@
   <title><![CDATA[Dan Jesus]]></title>
   <link href="http://danjesus.github.io/atom.xml" rel="self"/>
   <link href="http://danjesus.github.io/"/>
-  <updated>2014-09-19T02:23:45-03:00</updated>
+  <updated>2014-09-19T02:30:07-03:00</updated>
   <id>http://danjesus.github.io/</id>
   <author>
     <name><![CDATA[Dan Jesus]]></name>
@@ -12,74 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Instalando Google Cloud SDK no MacOS Yosemite + ZSH]]></title>
-    <link href="http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/"/>
-    <updated>2014-09-19T01:43:29-03:00</updated>
-    <id>http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh</id>
-    <content type="html"><![CDATA[<p>O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute Enginem, Cloud Storage, BigQuery, Cloud SQL  e Cloud DNS.</p>
-
-<p>Para instalar o google cloud SDK no yosemite devemos baixar a ferramenta via curl:</p>
-
-<pre><code>curl https://sdk.cloud.google.com | bash
-</code></pre>
-
-<h3>Importante</h3>
-
-<p>Caso seja apresentado algum erro durante a instalação provavelmente é problema um na versão de python que você tem instalada no seu ambiente, recomendo atualizar o python usando brew:</p>
-
-<pre><code>brew install python
-</code></pre>
-
-<p>Recomendo também atualizar o pip depois de atualizar o python, aliás a própria saída do comando de instalação do python vai te propor isso.
-    pip —upgrade pip
-    pip install &ndash;upgrade setuptools</p>
-
-<p>Feito este passo basta repetir o utilitário de instalação do google cloud SDK (gcloud) novamente.</p>
-
-<p>Durante a instalação do gcloud ele irá perguntar quais SDKs você quer instalar, como vou usar php e go eu selecionei primeiro o de php,
-depois será possível instalar mais componentes.</p>
-
-<p>Além disso no final da instalação ele irá pedir qual o path do seu arquivo profile, como estou usando zsh mudei para o caminho do meu arquivo .zshrc:
-Você deve mudar esta configuração para o path do seu ZSH.
-    ~/.zshrc</p>
-
-<p>Fazer reload no seu terminal:
-    source ~/.zshrc</p>
-
-<p>Ao fazer reload no termina você provalmente verá um erro como o abaixo:</p>
-
-<pre><code>/Users/danjesus/google-cloud-sdk/completion.bash.inc:19: parse error near `]]’
-</code></pre>
-
-<p>Isso acontece porque no seu arquivo .zshrc foram inseridas duas linhas como essas:</p>
-
-<pre><code># The next line updates PATH for the Google Cloud SDK.
-source '/Users/danjesus/google-cloud-sdk/path.bash.inc'
-
-#The next line enables bash completion for gcloud.
-source '/Users/danjesus/google-cloud-sdk/completion.bash.inc’
-</code></pre>
-
-<p>Repare que não está sendo usado o path para o ZSH e sim para o bash, devemos alterar estas linhas para o ZSH.</p>
-
-<pre><code>#The next line updates PATH for the Google Cloud SDK.
-source '/Users/danjesus/google-cloud-sdk/path.zsh.inc'
-# The next line enables bash completion for gcloud.
-source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
-</code></pre>
-
-<p>Feito isso atualizar o terminal</p>
-
-<pre><code>source ~/.zshrc
-</code></pre>
-
-<p>Agora ao digitar gcloud e pressionar um tab você verá os comandos disponíveis como na imagem abaixo:</p>
-
-<p><img src="images/Screenshot 2014-09-19 01.41.07.png" alt=""></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Vídeo TDC 2013 - Trilha Frontend]]></title>
