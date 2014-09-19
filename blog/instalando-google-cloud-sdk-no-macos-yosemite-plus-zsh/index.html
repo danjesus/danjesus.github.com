@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Meu primeiro Talk - SampaJS - Dan Jesus</title>
+  <title>Instalando Google Cloud SDK no MacOS Yosemite + ZSH - Dan Jesus</title>
   <meta name="author" content="Dan Jesus">
 
   
-  <meta name="description" content="Faz algumas semanas que realizei um Lightining Talk no maior evento de JS de São Paulo o SampaJS!
-Veja a página do evento aqui Estas duas semanas &hellip;">
+  <meta name="description" content="O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Veja a página do evento aqui Estas duas semanas &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/">
+  <link rel="canonical" href="http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -70,7 +69,7 @@ Veja a página do evento aqui Estas duas semanas &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Meu Primeiro Talk - SampaJS</h1>
+      <h1 class="entry-title">Instalando Google Cloud SDK No MacOS Yosemite + ZSH</h1>
     
     
       <p class="meta">
@@ -86,45 +85,73 @@ Veja a página do evento aqui Estas duas semanas &hellip;">
   
 
 
-<time datetime="2013-03-12T00:40:00-03:00" pubdate data-updated="true"></time>
+<time datetime="2014-09-19T01:43:29-03:00" pubdate data-updated="true"></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Faz algumas semanas que realizei um Lightining Talk no maior evento de JS de São Paulo o SampaJS!
-<a href="http://sampajs.com.br/#palestras">Veja a página do evento aqui</a></p>
+<div class="entry-content"><p>O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute Enginem, Cloud Storage, BigQuery, Cloud SQL  e Cloud DNS.</p>
 
-<p>Estas duas semanas foram bastante corridas pra mim entre entregas de projetos e estudo e não consegui postar aqui um pequeno review desta experiência.</p>
+<p>Para instalar o google cloud SDK no yosemite devemos baixar a ferramenta via curl:</p>
 
-<blockquote><p>Uma lightning talk (em inglês: palestra relâmpago) é uma apresentação curta dada em uma conferência ou forum similar. O contrário de outras apresentações, palestras relâmpagos duram poucos minutos. E durante um curto intervalo de tempo são apresentadas várias lightning talks por diversos oradores.</p><footer><strong>Fonte Wikipedia:</strong> <cite><a href='http://pt.wikipedia.org/wiki/Lightning_Talk'>pt.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+<pre><code>curl https://sdk.cloud.google.com | bash
+</code></pre>
 
+<h3>Importante</h3>
 
-<h2>Review do meu Talk</h2>
+<p>Caso seja apresentado algum erro durante a instalação provavelmente é problema um na versão de python que você tem instalada no seu ambiente, recomendo atualizar o python usando brew:</p>
 
-<p>Tudo no evento foi incrível pra mim, o nervosismo e a ansiedade atrapalharam um pouco mas deu pra segurar.
-Acredito que consegui passar o máximo de informação que eu pude no espaço de tempo que tinha para discorrer sobre o Yeoman.</p>
+<pre><code>brew install python
+</code></pre>
 
-<h2>Pontos Fortes</h2>
+<p>Recomendo também atualizar o pip depois de atualizar o python, aliás a própria saída do comando de instalação do python vai te propor isso.
+    pip —upgrade pip
+    pip install &ndash;upgrade setuptools</p>
 
-<p>Um ponto forte acredito que tenha sido a interacão com a galera, houveram muitas perguntas e isso foi bem legal.</p>
+<p>Feito este passo basta repetir o utilitário de instalação do google cloud SDK (gcloud) novamente.</p>
 
-<h2>Pontos fracos</h2>
+<p>Durante a instalação do gcloud ele irá perguntar quais SDKs você quer instalar, como vou usar php e go eu selecionei primeiro o de php,
+depois será possível instalar mais componentes.</p>
 
-<p>Nervosismo e ansiedade.
-Acredito que faltaram mais exemplos práticos e melhorar um pouco a postura (Culpa do meu nervosismo rs), e alguns vícios de linguagem.</p>
+<p>Além disso no final da instalação ele irá pedir qual o path do seu arquivo profile, como estou usando zsh mudei para o caminho do meu arquivo .zshrc:
+Você deve mudar esta configuração para o path do seu ZSH.
+    ~/.zshrc</p>
 
-<h2>Resultado Final</h2>
+<p>Fazer reload no seu terminal:
+    source ~/.zshrc</p>
 
-<p>Fiquei bem feliz com o resultado final, espero palestrar em mais eventos ao longo deste ano.
-Conheci várias devs da comunidade (Miller Medeiros, Suissa, Sergio Lopes da Caelum, Diulei Gomes, Yuri Camara) entre outros.
-Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
+<p>Ao fazer reload no termina você provalmente verá um erro como o abaixo:</p>
 
-<p>Coloquei o vídeo do talk logo abaixo, quem puder comentar e falar o que achou seria muito legal :D</p>
+<pre><code>/Users/danjesus/google-cloud-sdk/completion.bash.inc:19: parse error near `]]’
+</code></pre>
 
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/YFtPdJUvUwc" allowfullscreen></iframe></div>
+<p>Isso acontece porque no seu arquivo .zshrc foram inseridas duas linhas como essas:</p>
 
+<pre><code># The next line updates PATH for the Google Cloud SDK.
+source '/Users/danjesus/google-cloud-sdk/path.bash.inc'
+
+#The next line enables bash completion for gcloud.
+source '/Users/danjesus/google-cloud-sdk/completion.bash.inc’
+</code></pre>
+
+<p>Repare que não está sendo usado o path para o ZSH e sim para o bash, devemos alterar estas linhas para o ZSH.</p>
+
+<pre><code>#The next line updates PATH for the Google Cloud SDK.
+source '/Users/danjesus/google-cloud-sdk/path.zsh.inc'
+# The next line enables bash completion for gcloud.
+source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
+</code></pre>
+
+<p>Feito isso atualizar o terminal</p>
+
+<pre><code>source ~/.zshrc
+</code></pre>
+
+<p>Agora ao digitar gcloud e pressionar um tab você verá os comandos disponíveis como na imagem abaixo:</p>
+
+<p><img src="images/Screenshot 2014-09-19 01.41.07.png" alt=""></p>
 </div>
 
 
@@ -147,12 +174,12 @@ Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
   
 
 
-<time datetime="2013-03-12T00:40:00-03:00" pubdate data-updated="true"></time>
+<time datetime="2014-09-19T01:43:29-03:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/eventos/'>eventos</a>, <a class='category' href='/blog/categories/js/'>js</a>, <a class='category' href='/blog/categories/sampajs/'>sampajs</a>, <a class='category' href='/blog/categories/videos/'>videos</a>
+    <a class='category' href='/blog/categories/cloud/'>cloud</a>, <a class='category' href='/blog/categories/google/'>google</a>, <a class='category' href='/blog/categories/inicial/'>inicial,</a>, <a class='category' href='/blog/categories/platform/'>platform</a>, <a class='category' href='/blog/categories/terminal/'>terminal,</a>
   
 </span>
 
@@ -161,7 +188,7 @@ Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/" data-via="dannjesus" data-counturl="http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/" data-via="dannjesus" data-counturl="http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/" >Tweet</a>
   
   
   
@@ -170,10 +197,8 @@ Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/deploy-facil-com-git/" title="Previous Post: Deploy fácil com git">&laquo; Deploy fácil com git</a>
+        <a class="basic-alignment left" href="/blog/video-tdc-2013-trilha-frontend/" title="Previous Post: Vídeo TDC 2013 - Trilha Frontend">&laquo; Vídeo TDC 2013 - Trilha Frontend</a>
       
-      
-        <a class="basic-alignment right" href="/blog/usando-nvm-para-gerenciar-versoes-do-node-js/" title="Next Post: Usando NVM para gerenciar versões de NODE.js">Usando NVM para gerenciar versões de NODE.js &raquo;</a>
       
     </p>
   </footer>
@@ -268,8 +293,8 @@ Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/';
-        var disqus_url = 'http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/';
+        var disqus_identifier = 'http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/';
+        var disqus_url = 'http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/';
         var disqus_script = 'embed.js';
       
     (function () {

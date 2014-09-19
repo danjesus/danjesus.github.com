@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/</loc>
+    
+    <lastmod>2014-09-19T01:43:29-03:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://danjesus.github.io/blog/video-tdc-2013-trilha-frontend/</loc>
     
     <lastmod>2014-03-27T08:17:00-03:00</lastmod>
@@ -53,14 +61,14 @@
   
   <url>
     <loc>http://danjesus.github.io/blog/archives/</loc>
-    <lastmod>2014-09-19T02:30:07-03:00</lastmod>
+    <lastmod>2014-09-19T02:33:22-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://danjesus.github.io/</loc>
-    <lastmod>2014-09-19T02:30:07-03:00</lastmod>
+    <lastmod>2014-09-19T02:33:22-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
