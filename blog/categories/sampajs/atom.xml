@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sampajs | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/sampajs/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Meu primeiro Talk - SampaJS]]></title>
+    <link href="http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/"/>
+    <updated>2013-03-12T00:40:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/meu-primeiro-talk-sampajs</id>
+    <content type="html"><![CDATA[<p>Faz algumas semanas que realizei um Lightining Talk no maior evento de JS de São Paulo o SampaJS!
+<a href="http://sampajs.com.br/#palestras">Veja a página do evento aqui</a></p>
+
+<p>Estas duas semanas foram bastante corridas pra mim entre entregas de projetos e estudo e não consegui postar aqui um pequeno review desta experiência.</p>
+
+<p><blockquote><p>Uma lightning talk (em inglês: palestra relâmpago) é uma apresentação curta dada em uma conferência ou forum similar. O contrário de outras apresentações, palestras relâmpagos duram poucos minutos. E durante um curto intervalo de tempo são apresentadas várias lightning talks por diversos oradores.</p><footer><strong>Fonte Wikipedia: <a href="http://pt.wikipedia.org/wiki/Lightning_Talk">http://pt.wikipedia.org/wiki/Lightning_Talk</a></strong></footer></blockquote></p>
+
+<h2>Review do meu Talk</h2>
+
+<p>Tudo no evento foi incrível pra mim, o nervosismo e a ansiedade atrapalharam um pouco mas deu pra segurar.
+Acredito que consegui passar o máximo de informação que eu pude no espaço de tempo que tinha para discorrer sobre o Yeoman.</p>
+
+<h2>Pontos Fortes</h2>
+
+<p>Um ponto forte acredito que tenha sido a interacão com a galera, houveram muitas perguntas e isso foi bem legal.</p>
+
+<h2>Pontos fracos</h2>
+
+<p>Nervosismo e ansiedade.
+Acredito que faltaram mais exemplos práticos e melhorar um pouco a postura (Culpa do meu nervosismo rs), e alguns vícios de linguagem.</p>
+
+<h2>Resultado Final</h2>
+
+<p>Fiquei bem feliz com o resultado final, espero palestrar em mais eventos ao longo deste ano.
+Conheci várias devs da comunidade (Miller Medeiros, Suissa, Sergio Lopes da Caelum, Diulei Gomes, Yuri Camara) entre outros.
+Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
+
+<p>Coloquei o vídeo do talk logo abaixo, quem puder comentar e falar o que achou seria muito legal :D</p>
+
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/YFtPdJUvUwc" allowfullscreen></iframe></div></p>
+]]></content>
+  </entry>
+  
+</feed>

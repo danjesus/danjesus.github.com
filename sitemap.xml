@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/</loc>
+    
+    <lastmod>2014-09-19T01:43:29-03:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/video-tdc-2013-trilha-frontend/</loc>
+    
+    <lastmod>2014-03-27T08:17:00-03:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013/</loc>
+    
+    <lastmod>2013-10-11T01:57:00-03:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/usando-nvm-para-gerenciar-versoes-do-node-js/</loc>
+    
+    <lastmod>2013-09-08T00:03:00-03:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/</loc>
+    
+    <lastmod>2013-03-12T00:40:00-03:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/deploy-facil-com-git/</loc>
+    
+    <lastmod>2013-01-27T00:39:00-02:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/primeiro-post-com-octopress/</loc>
+    
+    <lastmod>2012-12-14T00:47:00-02:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://danjesus.github.io/blog/archives/</loc>
+    <lastmod>2014-09-19T02:23:45-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://danjesus.github.io/</loc>
+    <lastmod>2014-09-19T02:23:45-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  
+</urlset>

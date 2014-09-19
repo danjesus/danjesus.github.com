@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Deploy fácil com git]]></title>
+    <link href="http://danjesus.github.io/blog/deploy-facil-com-git/"/>
+    <updated>2013-01-27T00:39:00-02:00</updated>
+    <id>http://danjesus.github.io/blog/deploy-facil-com-git</id>
+    <content type="html"><![CDATA[<p>Já faz algum tempo que quando estou programando em PHP, mudei a forma de enviar meu código para o servidor de produção ou desenvolvimento.</p>
+
+<p>Ficar usando FTP até mesmo plugins como o SFTP do Sublime  Text 2 sempre foi bastante entendiante pra mim.</p>
+
+<p>Pra quem ainda não viu nada sobre git o Akita tem este excelente screencast <a href="http://blip.tv/akitaonrails/screencast-come-ando-com-git-6074964">começando com git</a>.</p>
+
+<p>Aliás recomendo não somente este screencast como os outros que ele já fez sobre código e <a href="http://akitaonrails.com/2012/04/09/screencasts-liberados-gratuitamente#.UQSG_Erjlk8">desenvolvimento de software</a>.</p>
+
+<p>Enviar seus arquivos versionados em git para um servidor remoto é extremamente simples, para fazer isso é necessário ter acesso ssh ao servidor.</p>
+
+<p>Partindo da premissa de que seu servidor tem acesso SSH, crie um repositório bare no seu servidor.</p>
+
+<pre><code>$ mkdir ~/app.git &amp;&amp; cd ~/app.git
+$ git init --bare
+</code></pre>
+
+<p>Um repositório bare contém apenas os arquivos versionados, por exemplo não contém aquele diretório .git.</p>
+
+<h2>Configurando o git-hook</h2>
+
+<p>Os hooks do git são pequenos scripts acionados por eventos, por exemplo antes de realizar um commit (pre-commit)  ou após realizar um commit (post-commit), o hook que utilizaremos é o post-receive que é disparado após realizarmos um push completo no servidor remoto.</p>
+
+<pre><code>$ cat &gt; hooks/post-receive
+#!/bin/sh
+GIT_WORK_TREE=/home/danjesus/myapp git checkout -f
+</code></pre>
+
+<p>Dê um ctrl+c ou cmd+c para fechar o arquivo e aplique a permissão de escrita.</p>
+
+<pre><code>$ chmod +x hooks/post-receive
+</code></pre>
+
+<p>O valor que foi setado para a variável GIT_WORK_TREE é o caminho da sua app no servidor.</p>
+
+<h2>Finalizando</h2>
+
+<p>Pra finalizar agora é só adicionar o repositório remoto e fazer um push.</p>
+
+<pre><code>$ git remote add deploy ssh://danjesus@danjesus.com/home/app.git
+$ git push deploy master
+</code></pre>
+
+<p>Pronto, agora toda vez que você fizer um push para o seu servidor as atualizacões serão refletidas automaticamente na sua app.</p>
+
+<h2>Notas</h2>
+
+<p>O <a href="http://blog.thiagobelem.net">Thiago Belem</a> tem um excelente tutorial sobre <a href="http://blog.thiagobelem.net/automatizando-a-instalacao-deploy-e-atualizacao-de-sites-com-git/">deploy</a> e <a href="http://blog.thiagobelem.net/login-automatico-no-ssh-no-linux/">ssh</a>.</p>
+
+<p>Pra quem usa heroku, bitbucket ou github, existe um excelente projeto chamado <a href="https://deploybutton.com/">Deploy Button</a>, que vale a pena dar uma olhada, depois vou postar um tuto aqui de exemplo, mesmo sendo extremamente simples:D</p>
+
+<h2>Referências e dicas</h2>
+
+<ul>
+<li><a href="http://paulovittor23.org/2012/02/07/git-hooks-pre-commit-para-projetos-java-e-ruby/">Git hooks - Paulo Vitor</a></li>
+<li><a href="http://git-scm.com/book/pt-br/Customizando-o-Git-Hooks-do-Git">Git Hooks - Docs</a></li>
+<li><a href="http://www.akitaonrails.com/2009/07/05/dicas-de-git#.UQSIyUrjlk8">Dicas de Git do Akita</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

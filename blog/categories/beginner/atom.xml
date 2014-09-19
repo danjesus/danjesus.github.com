@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: beginner | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/beginner/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Primeiro post com octopress]]></title>
+    <link href="http://danjesus.github.io/blog/primeiro-post-com-octopress/"/>
+    <updated>2012-12-14T00:47:00-02:00</updated>
+    <id>http://danjesus.github.io/blog/primeiro-post-com-octopress</id>
+    <content type="html"><![CDATA[<p>Depois de muito tempo tentando (Não sei se falta de tempo ou paciência para configurar) finalmente consegui configurar o octopress para começar com uma antiga promessa que era partilharo que eu for aprendendendo com a comunidade, e assim me desenvolver ainda mais!</p>
+
+<h2>Um 2013 mais colaborativo</h2>
+
+<p>Desta maneira espero que 2013 seja um ano de mais colaboração com a comunidade de desenvolvimento.</p>
+
+<h2>O que vocês vão ver por aqui?</h2>
+
+<ul>
+<li>Aqui irei postar sobre desenvolvimento web, sobre as linguagens que uso (PHP, Ruby, Javascript) desde assuntos beginners até intermediários, fatos que acontecem no dia-a-dia e nas startups que toco.</li>
+<li>Dicas de desenvolvimento, produtividade, diversão</li>
+<li>PHP acho que eu já falei PHP né rs</li>
+<li>Dicas sobre Mac e Linux (Tá vai windows talvez).</li>
+</ul>
+
+
+<h2>O que vocês não vão ver por aqui</h2>
+
+<ul>
+<li>Discussões exageradas</li>
+<li>Pontos de vista unilaterais</li>
+<li>Falar bem de windows (Brincadeira sem preconceito com windows ele vem evoluindo bastante e já pode ser considerada uma plataforma de desenvolvimento decente.)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

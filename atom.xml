@@ -1,101 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Dan Jesus</title>
-  <meta name="author" content="Dan Jesus">
-
-  
-  <meta name="description" content="O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://danjesus.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Dan Jesus" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:danjesus.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-    <li><a href="/">
-        <span class="blue_light">
-            Dan Jesus
-        </span>
-       
-           <span class="blue_dark">
-             learning everywhere.
-           </span>
-       
-    </a></li>
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
     
-      <h1 class="entry-title"><a href="/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/">Instalando Google Cloud SDK No MacOS Yosemite + ZSH</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-09-19T01:43:29-03:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute Enginem, Cloud Storage, BigQuery, Cloud SQL  e Cloud DNS.</p>
+  <entry>
+    <title type="html"><![CDATA[Instalando Google Cloud SDK no MacOS Yosemite + ZSH]]></title>
+    <link href="http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/"/>
+    <updated>2014-09-19T01:43:29-03:00</updated>
+    <id>http://danjesus.github.io/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh</id>
+    <content type="html"><![CDATA[<p>O Google Cloud SDk é um conjunto de ferramentas e bibliotecas que permite gerenciar projetos do Google Cloud Platform incluindo App Engine, Compute Enginem, Cloud Storage, BigQuery, Cloud SQL  e Cloud DNS.</p>
 
 <p>Para instalar o google cloud SDK no yosemite devemos baixar a ferramenta via curl:</p>
 
@@ -155,83 +78,29 @@ source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
 <p>Agora ao digitar gcloud e pressionar um tab você verá os comandos disponíveis como na imagem abaixo:</p>
 
 <p><img src="images/Screenshot 2014-09-19 01.41.07.png" alt=""></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/video-tdc-2013-trilha-frontend/">Vídeo TDC 2013 - Trilha Frontend</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-27T08:17:00-03:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Faz tempo que não posto nada por aqui, mas agora estou voltando e pra começar vou atualizar os últimos acontecimentos na minha carreira.
+  <entry>
+    <title type="html"><![CDATA[Vídeo TDC 2013 - Trilha Frontend]]></title>
+    <link href="http://danjesus.github.io/blog/video-tdc-2013-trilha-frontend/"/>
+    <updated>2014-03-27T08:17:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/video-tdc-2013-trilha-frontend</id>
+    <content type="html"><![CDATA[<p>Faz tempo que não posto nada por aqui, mas agora estou voltando e pra começar vou atualizar os últimos acontecimentos na minha carreira.
 Como já havia dito por aqui palestrei no TDC do ano passado na trilha frontend falando sobre Yeoman.</p>
 
 <p>O pessoal da organização gravou um vídeo e está disponível no site do <a href="http://www.infoq.com/br/presentations/desenvolvimento-yeoman">InfoQ</a>, assistam e deixem aqui a opnião de vocês.</p>
 
 <p>Até a próxima.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/vou-palestrar-na-phpconference-2013/">Vou Palestrar Na PHPConference 2013!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-11T01:57:00-03:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Este ano tem sido espetacular pra mim, palestrei na maioria dos eventos que eu sempre admirei entre eles o <a href="http://www.thedevelopersconference.com.br/tdc/2013/saopaulo/trilha-ux-front-end#programacao">TDC</a> (The Developers Conference), <a href="http://www.sampajs.com.br/#palestras">SampaJS</a> (v3 e v3.1).</p>
+  <entry>
+    <title type="html"><![CDATA[Vou palestrar na PHPConference 2013!]]></title>
+    <link href="http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013/"/>
+    <updated>2013-10-11T01:57:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013</id>
+    <content type="html"><![CDATA[<p>Este ano tem sido espetacular pra mim, palestrei na maioria dos eventos que eu sempre admirei entre eles o <a href="http://www.thedevelopersconference.com.br/tdc/2013/saopaulo/trilha-ux-front-end#programacao">TDC</a> (The Developers Conference), <a href="http://www.sampajs.com.br/#palestras">SampaJS</a> (v3 e v3.1).</p>
 
 <p>Um evento que sempre foi especial pra mim e aguardado o ano todo é a PHPConference, que é de longe o maior evento da américa latina dentro comunidade PHP a qual eu tenho imenso orgulho de fazer parte.</p>
 
@@ -240,42 +109,15 @@ Como já havia dito por aqui palestrei no TDC do ano passado na trilha frontend 
 <p>Minha palestra será sobre <a href="http://fuelphp.com/about">FUELPHP</a>, que é um framework para desenvolvimento de aplicações que constantemente venho usando nos meus projetos, é um framework MVC/HMVC com uma estrutura modular, entre os vários recursos estão scaffold, gerenciamento de pacotes via composer, ORM, migrations, tasks entre outras.</p>
 
 <p>Os detalhes da minha palestra estão no site da <a href="http://www.phpconference.com.br/presentations/show/id/24">PHPConference</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/usando-nvm-para-gerenciar-versoes-do-node-js/">Usando NVM Para Gerenciar Versões De NODE.js</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-08T00:03:00-03:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>NVM Node Version Manager facilita o trabalho de atualização do nodejs, como node está em constante evolução sempre temos novas versões e ficar fazendo download ou update via algum gerenciador de pacotes como o homebrew/apt-get é bem tedioso.</p>
+  <entry>
+    <title type="html"><![CDATA[Usando NVM para gerenciar versões de NODE.js]]></title>
+    <link href="http://danjesus.github.io/blog/usando-nvm-para-gerenciar-versoes-do-node-js/"/>
+    <updated>2013-09-08T00:03:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/usando-nvm-para-gerenciar-versoes-do-node-js</id>
+    <content type="html"><![CDATA[<p>NVM Node Version Manager facilita o trabalho de atualização do nodejs, como node está em constante evolução sempre temos novas versões e ficar fazendo download ou update via algum gerenciador de pacotes como o homebrew/apt-get é bem tedioso.</p>
 
 <p>NVM nos permite ter mais de uma versão de node instalada, e alternar entre elas, fornece uma linha de comando simples para realizar as tarefas de instalacão e desinstalacão além de permitir a execucão de um script em determinada versão mesmo ela não sendo a versão corrente.</p>
 
@@ -334,42 +176,15 @@ nvm                 nvm_checksum        nvm_ls              nvm_ls_remote       
 </code></pre>
 
 <p>Venho utilizando já algum tempo e facilita bastante o meu workflow, e você como está gerenciando suas versões de node?</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/meu-primeiro-talk-sampajs/">Meu Primeiro Talk - SampaJS</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-12T00:40:00-03:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Faz algumas semanas que realizei um Lightining Talk no maior evento de JS de São Paulo o SampaJS!
+  <entry>
+    <title type="html"><![CDATA[Meu primeiro Talk - SampaJS]]></title>
+    <link href="http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/"/>
+    <updated>2013-03-12T00:40:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/meu-primeiro-talk-sampajs</id>
+    <content type="html"><![CDATA[<p>Faz algumas semanas que realizei um Lightining Talk no maior evento de JS de São Paulo o SampaJS!
 <a href="http://sampajs.com.br/#palestras">Veja a página do evento aqui</a></p>
 
 <p>Estas duas semanas foram bastante corridas pra mim entre entregas de projetos e estudo e não consegui postar aqui um pequeno review desta experiência.</p>
@@ -401,42 +216,15 @@ Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
 
 <div class="embed-video-container"><iframe src="http://www.youtube.com/embed/YFtPdJUvUwc" allowfullscreen></iframe></div>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/deploy-facil-com-git/">Deploy Fácil Com Git</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-27T00:39:00-02:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Já faz algum tempo que quando estou programando em PHP, mudei a forma de enviar meu código para o servidor de produção ou desenvolvimento.</p>
+  <entry>
+    <title type="html"><![CDATA[Deploy fácil com git]]></title>
+    <link href="http://danjesus.github.io/blog/deploy-facil-com-git/"/>
+    <updated>2013-01-27T00:39:00-02:00</updated>
+    <id>http://danjesus.github.io/blog/deploy-facil-com-git</id>
+    <content type="html"><![CDATA[<p>Já faz algum tempo que quando estou programando em PHP, mudei a forma de enviar meu código para o servidor de produção ou desenvolvimento.</p>
 
 <p>Ficar usando FTP até mesmo plugins como o SFTP do Sublime  Text 2 sempre foi bastante entendiante pra mim.</p>
 
@@ -494,42 +282,15 @@ $ git push deploy master
 <li><a href="http://www.akitaonrails.com/2009/07/05/dicas-de-git#.UQSIyUrjlk8">Dicas de Git do Akita</a></li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/primeiro-post-com-octopress/">Primeiro Post Com Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-14T00:47:00-02:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Depois de muito tempo tentando (Não sei se falta de tempo ou paciência para configurar) finalmente consegui configurar o octopress para começar com uma antiga promessa que era partilharo que eu for aprendendendo com a comunidade, e assim me desenvolver ainda mais!</p>
+  <entry>
+    <title type="html"><![CDATA[Primeiro post com octopress]]></title>
+    <link href="http://danjesus.github.io/blog/primeiro-post-com-octopress/"/>
+    <updated>2012-12-14T00:47:00-02:00</updated>
+    <id>http://danjesus.github.io/blog/primeiro-post-com-octopress</id>
+    <content type="html"><![CDATA[<p>Depois de muito tempo tentando (Não sei se falta de tempo ou paciência para configurar) finalmente consegui configurar o octopress para começar com uma antiga promessa que era partilharo que eu for aprendendendo com a comunidade, e assim me desenvolver ainda mais!</p>
 
 <h2>Um 2013 mais colaborativo</h2>
 
@@ -553,126 +314,7 @@ $ git push deploy master
 <li>Falar bem de windows (Brincadeira sem preconceito com windows ele vem evoluindo bastante e já pode ser considerada uma plataforma de desenvolvimento decente.)</li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/instalando-google-cloud-sdk-no-macos-yosemite-plus-zsh/">Instalando Google Cloud SDK no MacOS Yosemite + ZSH</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/video-tdc-2013-trilha-frontend/">Vídeo TDC 2013 - Trilha Frontend</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/vou-palestrar-na-phpconference-2013/">Vou palestrar na PHPConference 2013!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/usando-nvm-para-gerenciar-versoes-do-node-js/">Usando NVM para gerenciar versões de NODE.js</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/meu-primeiro-talk-sampajs/">Meu primeiro Talk - SampaJS</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/danjesus">@danjesus</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'danjesus',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Dan Jesus -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'danjesus';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

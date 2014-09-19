@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: yeoman, | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/yeoman/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Vídeo TDC 2013 - Trilha Frontend]]></title>
+    <link href="http://danjesus.github.io/blog/video-tdc-2013-trilha-frontend/"/>
+    <updated>2014-03-27T08:17:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/video-tdc-2013-trilha-frontend</id>
+    <content type="html"><![CDATA[<p>Faz tempo que não posto nada por aqui, mas agora estou voltando e pra começar vou atualizar os últimos acontecimentos na minha carreira.
+Como já havia dito por aqui palestrei no TDC do ano passado na trilha frontend falando sobre Yeoman.</p>
+
+<p>O pessoal da organização gravou um vídeo e está disponível no site do <a href="http://www.infoq.com/br/presentations/desenvolvimento-yeoman">InfoQ</a>, assistam e deixem aqui a opnião de vocês.</p>
+
+<p>Até a próxima.</p>
+]]></content>
+  </entry>
+  
+</feed>

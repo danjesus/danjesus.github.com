@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: eventos | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/eventos/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Vou palestrar na PHPConference 2013!]]></title>
+    <link href="http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013/"/>
+    <updated>2013-10-11T01:57:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013</id>
+    <content type="html"><![CDATA[<p>Este ano tem sido espetacular pra mim, palestrei na maioria dos eventos que eu sempre admirei entre eles o <a href="http://www.thedevelopersconference.com.br/tdc/2013/saopaulo/trilha-ux-front-end#programacao">TDC</a> (The Developers Conference), <a href="http://www.sampajs.com.br/#palestras">SampaJS</a> (v3 e v3.1).</p>
+
+<p>Um evento que sempre foi especial pra mim e aguardado o ano todo é a PHPConference, que é de longe o maior evento da américa latina dentro comunidade PHP a qual eu tenho imenso orgulho de fazer parte.</p>
+
+<p>A comunidade de desenvolvedores PHP do Brasil inteiro está bastante ativa e caminhando ao meu ver de maneira muito bacana e poder falar pra toda essa galera, de fato é algo espetacular pra mim e uma experiência que vou levar para a minha vida e carreira.</p>
+
+<p>Minha palestra será sobre <a href="http://fuelphp.com/about">FUELPHP</a>, que é um framework para desenvolvimento de aplicações que constantemente venho usando nos meus projetos, é um framework MVC/HMVC com uma estrutura modular, entre os vários recursos estão scaffold, gerenciamento de pacotes via composer, ORM, migrations, tasks entre outras.</p>
+
+<p>Os detalhes da minha palestra estão no site da <a href="http://www.phpconference.com.br/presentations/show/id/24">PHPConference</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Meu primeiro Talk - SampaJS]]></title>
+    <link href="http://danjesus.github.io/blog/meu-primeiro-talk-sampajs/"/>
+    <updated>2013-03-12T00:40:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/meu-primeiro-talk-sampajs</id>
+    <content type="html"><![CDATA[<p>Faz algumas semanas que realizei um Lightining Talk no maior evento de JS de São Paulo o SampaJS!
+<a href="http://sampajs.com.br/#palestras">Veja a página do evento aqui</a></p>
+
+<p>Estas duas semanas foram bastante corridas pra mim entre entregas de projetos e estudo e não consegui postar aqui um pequeno review desta experiência.</p>
+
+<p><blockquote><p>Uma lightning talk (em inglês: palestra relâmpago) é uma apresentação curta dada em uma conferência ou forum similar. O contrário de outras apresentações, palestras relâmpagos duram poucos minutos. E durante um curto intervalo de tempo são apresentadas várias lightning talks por diversos oradores.</p><footer><strong>Fonte Wikipedia: <a href="http://pt.wikipedia.org/wiki/Lightning_Talk">http://pt.wikipedia.org/wiki/Lightning_Talk</a></strong></footer></blockquote></p>
+
+<h2>Review do meu Talk</h2>
+
+<p>Tudo no evento foi incrível pra mim, o nervosismo e a ansiedade atrapalharam um pouco mas deu pra segurar.
+Acredito que consegui passar o máximo de informação que eu pude no espaço de tempo que tinha para discorrer sobre o Yeoman.</p>
+
+<h2>Pontos Fortes</h2>
+
+<p>Um ponto forte acredito que tenha sido a interacão com a galera, houveram muitas perguntas e isso foi bem legal.</p>
+
+<h2>Pontos fracos</h2>
+
+<p>Nervosismo e ansiedade.
+Acredito que faltaram mais exemplos práticos e melhorar um pouco a postura (Culpa do meu nervosismo rs), e alguns vícios de linguagem.</p>
+
+<h2>Resultado Final</h2>
+
+<p>Fiquei bem feliz com o resultado final, espero palestrar em mais eventos ao longo deste ano.
+Conheci várias devs da comunidade (Miller Medeiros, Suissa, Sergio Lopes da Caelum, Diulei Gomes, Yuri Camara) entre outros.
+Pude perceber o quão ativa está a comunidade JS aqui em Sampa.</p>
+
+<p>Coloquei o vídeo do talk logo abaixo, quem puder comentar e falar o que achou seria muito legal :D</p>
+
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/YFtPdJUvUwc" allowfullscreen></iframe></div></p>
+]]></content>
+  </entry>
+  
+</feed>

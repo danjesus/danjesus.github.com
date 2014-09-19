@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: php, | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Vou palestrar na PHPConference 2013!]]></title>
+    <link href="http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013/"/>
+    <updated>2013-10-11T01:57:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/vou-palestrar-na-phpconference-2013</id>
+    <content type="html"><![CDATA[<p>Este ano tem sido espetacular pra mim, palestrei na maioria dos eventos que eu sempre admirei entre eles o <a href="http://www.thedevelopersconference.com.br/tdc/2013/saopaulo/trilha-ux-front-end#programacao">TDC</a> (The Developers Conference), <a href="http://www.sampajs.com.br/#palestras">SampaJS</a> (v3 e v3.1).</p>
+
+<p>Um evento que sempre foi especial pra mim e aguardado o ano todo é a PHPConference, que é de longe o maior evento da américa latina dentro comunidade PHP a qual eu tenho imenso orgulho de fazer parte.</p>
+
+<p>A comunidade de desenvolvedores PHP do Brasil inteiro está bastante ativa e caminhando ao meu ver de maneira muito bacana e poder falar pra toda essa galera, de fato é algo espetacular pra mim e uma experiência que vou levar para a minha vida e carreira.</p>
+
+<p>Minha palestra será sobre <a href="http://fuelphp.com/about">FUELPHP</a>, que é um framework para desenvolvimento de aplicações que constantemente venho usando nos meus projetos, é um framework MVC/HMVC com uma estrutura modular, entre os vários recursos estão scaffold, gerenciamento de pacotes via composer, ORM, migrations, tasks entre outras.</p>
+
+<p>Os detalhes da minha palestra estão no site da <a href="http://www.phpconference.com.br/presentations/show/id/24">PHPConference</a></p>
+]]></content>
+  </entry>
+  
+</feed>

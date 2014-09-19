@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: node | Dan Jesus]]></title>
+  <link href="http://danjesus.github.io/blog/categories/node/atom.xml" rel="self"/>
+  <link href="http://danjesus.github.io/"/>
+  <updated>2014-09-19T02:23:45-03:00</updated>
+  <id>http://danjesus.github.io/</id>
+  <author>
+    <name><![CDATA[Dan Jesus]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Usando NVM para gerenciar versões de NODE.js]]></title>
+    <link href="http://danjesus.github.io/blog/usando-nvm-para-gerenciar-versoes-do-node-js/"/>
+    <updated>2013-09-08T00:03:00-03:00</updated>
+    <id>http://danjesus.github.io/blog/usando-nvm-para-gerenciar-versoes-do-node-js</id>
+    <content type="html"><![CDATA[<p>NVM Node Version Manager facilita o trabalho de atualização do nodejs, como node está em constante evolução sempre temos novas versões e ficar fazendo download ou update via algum gerenciador de pacotes como o homebrew/apt-get é bem tedioso.</p>
+
+<p>NVM nos permite ter mais de uma versão de node instalada, e alternar entre elas, fornece uma linha de comando simples para realizar as tarefas de instalacão e desinstalacão além de permitir a execucão de um script em determinada versão mesmo ela não sendo a versão corrente.</p>
+
+<h2>Plataformas</h2>
+
+<p>Somente disponível para OS-X e Linux para Windows existe uma alternativa chamada <a href="https://github.com/hakobera/nvmw">nvmw</a>.</p>
+
+<p>Documentacão: <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a></p>
+
+<h2>Instalação via Curl</h2>
+
+<pre><code>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+</code></pre>
+
+<h2>Instalação via Wget</h2>
+
+<pre><code>$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+</code></pre>
+
+<h2>Listar versões de node disponíveis</h2>
+
+<pre><code>$ nvm ls-remote
+</code></pre>
+
+<h2>Instalar uma versão</h2>
+
+<pre><code>$ nvm install v0.10.18
+</code></pre>
+
+<h2>Utilizar uma versão</h2>
+
+<pre><code>$ nvm use v.0.10.18
+</code></pre>
+
+<p>Caso queira executar um script em uma versão que não seja a default, ou por exemplo verificar se seu código é compátivel com uma versão antiga:</p>
+
+<pre><code>$ nvm run v.0.4.12 script.js
+</code></pre>
+
+<h2>Bônus - Autocompletar no terminal</h2>
+
+<pre><code>[[ -r $NVM_DIR/bash_completion ]] &amp;&amp; . $NVM_DIR/bash_completion
+</code></pre>
+
+<p>Insira a linha acima no seu arquivo .bashrc, .bash_profile, .zshrc, etc
+Não esqueça logo após inserir esta linha salvar e recarregar o arquivo com:</p>
+
+<pre><code>source .bashrc|.bash_profile|.zshrc
+</code></pre>
+
+<p>Autocompletar em ação:</p>
+
+<pre><code>nvm [tab]
+-- shell function --
+nvm                 nvm_checksum        nvm_ls              nvm_ls_remote       nvm_remote_version  nvm_set_nullglob    nvm_version
+</code></pre>
+
+<p>Venho utilizando já algum tempo e facilita bastante o meu workflow, e você como está gerenciando suas versões de node?</p>
+]]></content>
+  </entry>
+  
+</feed>
