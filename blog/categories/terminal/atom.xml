@@ -4,7 +4,7 @@
   <title><![CDATA[Category: terminal, | Dan Jesus]]></title>
   <link href="http://danjesus.github.io/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://danjesus.github.io/"/>
-  <updated>2014-09-19T10:49:07-03:00</updated>
+  <updated>2014-09-22T22:21:43-03:00</updated>
   <id>http://danjesus.github.io/</id>
   <author>
     <name><![CDATA[Dan Jesus]]></name>
@@ -77,7 +77,7 @@ source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
 
 <p>Agora ao digitar gcloud e pressionar um tab você verá os comandos disponíveis como na imagem abaixo:</p>
 
-<p><img src="images/Screenshot 2014-09-19 01.41.07.png"></p>
+<p><img src="//danjesus.github.io/images/Screenshot 2014-09-19 01.41.07.png"></p>
 ]]></content>
   </entry>
   
