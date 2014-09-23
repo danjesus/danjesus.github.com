@@ -108,19 +108,44 @@
 
 <p>Para instalar o google cloud SDK no yosemite devemos baixar a ferramenta via curl:</p>
 
-<pre><code>curl https://sdk.cloud.google.com | bash
-</code></pre>
+<div class="window">
+          <nav class="control-window">
+            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="minimize">minimize</a>
+            <a href="#" class="deactivate">deactivate</a>
+          </nav>
+          <h1 class="titleInside">Terminal</h1>
+          <div class="container"><div class="terminal"><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>$</span></pre></td><td class='code'><pre><code><span class='line command'>curl https://sdk.cloud.google.com | bash</span></code></pre></td></tr></table></div></div>
+        </div>
+
 
 <h3>Importante</h3>
 
 <p>Caso seja apresentado algum erro durante a instalação provavelmente é problema um na versão de python que você tem instalada no seu ambiente, recomendo atualizar o python usando brew:</p>
 
-<pre><code>brew install python
-</code></pre>
+<div class="window">
+          <nav class="control-window">
+            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="minimize">minimize</a>
+            <a href="#" class="deactivate">deactivate</a>
+          </nav>
+          <h1 class="titleInside">Terminal</h1>
+          <div class="container"><div class="terminal"><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>$</span></pre></td><td class='code'><pre><code><span class='line command'>brew install python</span></code></pre></td></tr></table></div></div>
+        </div>
 
-<p>Recomendo também atualizar o pip depois de atualizar o python, aliás a própria saída do comando de instalação do python vai te propor isso.
-    pip —upgrade pip
-    pip install &ndash;upgrade setuptools</p>
+
+<p>Recomendo também atualizar o pip depois de atualizar o python, aliás a própria saída do comando de instalação do python vai te propor isso.</p>
+
+<div class="window">
+          <nav class="control-window">
+            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="minimize">minimize</a>
+            <a href="#" class="deactivate">deactivate</a>
+          </nav>
+          <h1 class="titleInside">Terminal</h1>
+          <div class="container"><div class="terminal"><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>$</span></pre></td><td class='code'><pre><code><span class='line command'>pip —upgrade pip && pip install --upgrade setuptools</span></code></pre></td></tr></table></div></div>
+        </div>
+
 
 <p>Feito este passo basta repetir o utilitário de instalação do google cloud SDK (gcloud) novamente.</p>
 
@@ -128,38 +153,74 @@
 depois será possível instalar mais componentes.</p>
 
 <p>Além disso no final da instalação ele irá pedir qual o path do seu arquivo profile, como estou usando zsh mudei para o caminho do meu arquivo .zshrc:
-Você deve mudar esta configuração para o path do seu ZSH.
-    ~/.zshrc</p>
+Você deve mudar esta configuração para o path do seu ZSH, provavelmente no seu diretório home | ~/.zshrc</p>
 
-<p>Fazer reload no seu terminal:
-    source ~/.zshrc</p>
+<p>Fazer reload no seu terminal:</p>
+
+<div class="window">
+          <nav class="control-window">
+            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="minimize">minimize</a>
+            <a href="#" class="deactivate">deactivate</a>
+          </nav>
+          <h1 class="titleInside">Terminal</h1>
+          <div class="container"><div class="terminal"><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>$</span></pre></td><td class='code'><pre><code><span class='line command'>source ~/.zshrc</span></code></pre></td></tr></table></div></div>
+        </div>
+
 
 <p>Ao fazer reload no termina você provalmente verá um erro como o abaixo:</p>
 
-<pre><code>/Users/danjesus/google-cloud-sdk/completion.bash.inc:19: parse error near `]]’
-</code></pre>
+<div class="window">
+          <nav class="control-window">
+            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="minimize">minimize</a>
+            <a href="#" class="deactivate">deactivate</a>
+          </nav>
+          <h1 class="titleInside">Terminal</h1>
+          <div class="container"><div class="terminal"><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>$</span></pre></td><td class='code'><pre><code><span class='line command'>/Users/danjesus/google-cloud-sdk/completion.bash.inc:19: parse error near `]]’</span></code></pre></td></tr></table></div></div>
+        </div>
+
 
 <p>Isso acontece porque no seu arquivo .zshrc foram inseridas duas linhas como essas:</p>
 
-<pre><code># The next line updates PATH for the Google Cloud SDK.
-source '/Users/danjesus/google-cloud-sdk/path.bash.inc'
+<figure class='code'><figcaption><span>.zshrc mark: 2,5</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># The next line updates PATH for the Google Cloud SDK.</span>
+</span><span class='line'><span class="nb">source</span> <span class="s1">&#39;/Users/danjesus/google-cloud-sdk/path.bash.inc&#39;</span>
+</span><span class='line'><span class="c">#The next line enables bash completion for gcloud.</span>
+</span><span class='line'><span class="nb">source</span> <span class="err">&#39;</span>/Users/danjesus/google-cloud-sdk/completion.bash.inc’
+</span></code></pre></td></tr></table></div></figure>
 
-#The next line enables bash completion for gcloud.
-source '/Users/danjesus/google-cloud-sdk/completion.bash.inc’
-</code></pre>
 
 <p>Repare que não está sendo usado o path para o ZSH e sim para o bash, devemos alterar estas linhas para o ZSH.</p>
 
-<pre><code>#The next line updates PATH for the Google Cloud SDK.
-source '/Users/danjesus/google-cloud-sdk/path.zsh.inc'
-# The next line enables bash completion for gcloud.
-source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
-</code></pre>
+<figure class='code'><figcaption><span>.zshrc</span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#The next line updates PATH for the Google Cloud SDK.</span>
+</span><span class='line'><span class="nb">source</span> <span class="s1">&#39;/Users/danjesus/google-cloud-sdk/path.zsh.inc&#39;</span>
+</span><span class='line'><span class="c"># The next line enables bash completion for gcloud.</span>
+</span><span class='line'><span class="nb">source</span> <span class="err">&#39;</span>/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Feito isso atualizar o terminal</p>
 
-<pre><code>source ~/.zshrc
-</code></pre>
+<div class="window">
+          <nav class="control-window">
+            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="minimize">minimize</a>
+            <a href="#" class="deactivate">deactivate</a>
+          </nav>
+          <h1 class="titleInside">Terminal</h1>
+          <div class="container"><div class="terminal"><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>$</span></pre></td><td class='code'><pre><code><span class='line command'>source ~/.zshrc</span></code></pre></td></tr></table></div></div>
+        </div>
+
 
 <p>Agora ao digitar gcloud e pressionar um tab você verá os comandos disponíveis como na imagem abaixo:</p>
 
@@ -191,7 +252,7 @@ source '/Users/danjesus/google-cloud-sdk/completion.zsh.inc’
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/cloud/'>cloud</a>, <a class='category' href='/blog/categories/google/'>google</a>, <a class='category' href='/blog/categories/inicial/'>inicial,</a>, <a class='category' href='/blog/categories/platform/'>platform</a>, <a class='category' href='/blog/categories/terminal/'>terminal,</a>
+    <a class='category' href='/blog/categories/google-cloud-platform/'>google cloud platform</a>, <a class='category' href='/blog/categories/iniciante/'>iniciante</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
   
 </span>
 
